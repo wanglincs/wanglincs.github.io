@@ -1,54 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo + Github 搭建博客</title>
-    <url>/2021/08/29/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p>想法的开始是起于疫情的那个暑假，其间断断续续，把拖延症发挥到极致。遇到奇奇怪怪的BUG就一段时间的不了了之。闲则思变，想起我那胎死腹中，未见人间的博客呀，最近又将它搞起来。</p>
-<hr>
-<span id="more"></span>
-
-<h2 id="INSTRUCTION"><a href="#INSTRUCTION" class="headerlink" title="INSTRUCTION"></a>INSTRUCTION</h2><p>想法很美好，本来想用worldpress，毕竟上面的主题很香,可是需要一个虚拟主机，卑微的钱包发出抗议。好了，话不多讲。干事之前，需要 hexo ，node.js，github，git等准备。 </p>
-<p>想法很美好，本来想一步步记录的，整理成一个完美主义的教程。可惜这世上只有不完美，毕竟markdown才刚刚开始练习，另加天知道我之前干了啥。所以记录下自己的主要步骤与参考，以及避的坑。</p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
-<li><p><strong>注册一个Github账号</strong>。</p>
-<p>请注意想办法让<strong>网络连接飞起</strong>，不然后面部署到仓库中会很痛苦。当然也可以改Github用国内的Gitee。</p>
-</li>
-<li><p><strong>安装Git</strong></p>
-</li>
-<li><p><strong>将Git与Github进行绑定</strong></p>
-<p>这是为了使用Git将本地的文件进行上传。有兴趣可以关注<a href="https://blog.csdn.net/qq_35246620/article/details/54317740">SSH</a></p>
-</li>
-<li><p><strong>购买域名</strong></p>
-<p>这一步可没有，那么最后访问的时候就变成了你github仓库的地址。如：”张三.github.io”</p>
-</li>
-<li><p>这里正戏开始，<strong>安装node.js和Hexo</strong></p>
-</li>
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>NexT</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/03/27/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -65,5 +17,74 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Hexo + Github 第一次搭建博客踩坑及建议</title>
+    <url>/2021/08/29/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p>想法的开始是起于疫情的那个暑假，其间断断续续，把拖延症发挥到极致。遇到奇奇怪怪的BUG就一段时间的不了了之。闲则思变，想起我那胎死腹中，未见人间的博客呀，最近又将它搞起来。</p>
+<hr>
+<span id="more"></span>
+
+<h2 id="INSTRUCTION"><a href="#INSTRUCTION" class="headerlink" title="INSTRUCTION"></a>INSTRUCTION</h2><p>想法很美好，本来想用worldpress，毕竟上面的主题很香,可是需要一个虚拟主机，卑微的钱包发出抗议。好了，话不多讲。干事之前，需要 hexo ，node.js，github，git等准备。 </p>
+<p>想法很美好，本来想一步步记录的，整理成一个完美主义的教程。可惜这世上只有不完美，毕竟markdown才刚刚开始练习，另加天知道我之前干了啥。所以<strong>记录下自己的主要步骤与参考，以及避的坑。</strong></p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li><p><strong>注册一个Github账号</strong>。</p>
+<p>请注意想办法让<strong>网络连接飞起</strong>，不然后面部署到仓库中会很痛苦。当然也可以改Github用国内的Gitee。</p>
+</li>
+<li><p><strong>安装Git</strong></p>
+</li>
+<li><p><strong>将Git与Github进行绑定</strong></p>
+<p>这是为了使用Git将本地的文件进行上传。有兴趣可以关注<a href="https://blog.csdn.net/qq_35246620/article/details/54317740">SSH</a></p>
+</li>
+<li><p><strong>购买域名</strong></p>
+<p>这一步可以没有，那么最后访问的时候就变成了你github仓库的地址。如：”张三.github.io”</p>
+</li>
+<li><p>这里正戏开始，<strong>安装node.js和Hexo</strong></p>
+</li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<h3 id="坑（或建议）"><a href="#坑（或建议）" class="headerlink" title="坑（或建议）"></a>坑（或建议）</h3><ol>
+<li><p>当不论发生什么奇奇怪怪的错误时，想重新再来时，及时 <strong>hexo clean</strong>。</p>
+</li>
+<li><p>注意hexo depoloy网络有时会报出SSL readtime之类的错误，参考第一条，并且<strong>Be patient</strong>。</p>
+</li>
+<li><p>如果是一个新手，比如我，想玩一些花花的功能，网上有一堆主题优化。但请及时止损，时间啊，朋友。<strong>审美没有终点，直到她将你消耗殆尽。</strong>这是我反复横跳多个主题后的领悟。</p>
+</li>
+<li><p>最后，我还是回归到了简洁的<strong>NexT主题</strong>，这是Hexo官方的，有四种模式，网上资料<strong>极多</strong>。</p>
+</li>
+<li><p>说到网上，建议Google&#x2F;Bing，抛弃<del>百度</del>。<strong>另</strong>，建议搜索<strong>筛选一下时间</strong>近两年。避免找到老版本的一些方案。（老版本一些优化可能会起作用，但会变成魔改）</p>
+</li>
+<li><p>想真要亲力亲为撘一个不错的博客，需要学习一些前端知识，如html，css，js等等，我也是把写博客当成一个机会，练习一下Markdown的语法。（后端，要自己搞得话，数据库也得学呀）</p>
+</li>
+<li><p>打算未来某一天，如果可以，给它上下打通，学的东西还有很多，路漫漫其修远兮。</p>
+</li>
+</ol>
+<h3 id="备忘"><a href="#备忘" class="headerlink" title="备忘"></a>备忘</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>技术，博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>时隔很久的第一次更新</title>
+    <url>/2022/03/28/%E6%97%B6%E9%9A%94%E5%BE%88%E4%B9%85%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
