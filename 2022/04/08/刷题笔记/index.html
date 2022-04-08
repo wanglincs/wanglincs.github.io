@@ -21,26 +21,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"wanglincs.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="林间有酒，亦有路；点点滴滴，从此记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="林间(木木的博客)">
-<meta property="og:url" content="http://wanglincs.github.io/archives/2021/08/index.html">
+    <meta name="description" content="C++刷题笔记Tipsreverse(result.begin(),result.end()); 反转数组 自己写： void reverse(vector&lt;int&gt; &amp;nums,int start, int end) &amp;#123;     while(start &lt; end)&amp;#123;         swap(nums[start],nums[end]);">
+<meta property="og:type" content="article">
+<meta property="og:title" content="刷题笔记">
+<meta property="og:url" content="http://wanglincs.github.io/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="林间(木木的博客)">
-<meta property="og:description" content="林间有酒，亦有路；点点滴滴，从此记录">
+<meta property="og:description" content="C++刷题笔记Tipsreverse(result.begin(),result.end()); 反转数组 自己写： void reverse(vector&lt;int&gt; &amp;nums,int start, int end) &amp;#123;     while(start &lt; end)&amp;#123;         swap(nums[start],nums[end]);">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-08T11:51:43.000Z">
+<meta property="article:modified_time" content="2022-04-08T11:53:21.571Z">
 <meta property="article:author" content="木~木">
-<meta property="article:tag" content="读书 编程 日常">
+<meta property="article:tag" content="c++，刷题">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://wanglincs.github.io/archives/2021/08/">
+<link rel="canonical" href="http://wanglincs.github.io/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2021/08/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://wanglincs.github.io/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/","path":"2022/04/08/刷题笔记/","title":"刷题笔记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | 林间(木木的博客)</title>
+<title>刷题笔记 | 林间(木木的博客)</title>
   
 
 
@@ -70,7 +72,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">林间(木木的博客)</h1>
+      <p class="site-title">林间(木木的博客)</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">欢迎到访，请您上座。</p>
@@ -130,7 +132,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -143,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0Tips"><span class="nav-number">1.</span> <span class="nav-text">C++刷题笔记Tips</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -204,50 +207,166 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 4 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://wanglincs.github.io/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.png">
+      <meta itemprop="name" content="木~木">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="林间(木木的博客)">
+      <meta itemprop="description" content="林间有酒，亦有路；点点滴滴，从此记录">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="刷题笔记 | 林间(木木的博客)">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          刷题笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2022-04-08 19:51:43 / 修改时间：19:53:21" itemprop="dateCreated datePublished" datetime="2022-04-08T19:51:43+08:00">2022-04-08</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/" data-xid="/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="刷题笔记" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="C-刷题笔记Tips"><a href="#C-刷题笔记Tips" class="headerlink" title="C++刷题笔记Tips"></a>C++刷题笔记Tips</h2><p><code>reverse(result.begin(),result.end());</code> 反转数组</p>
+<p>自己写：</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void reverse(vector&lt;int&gt; &amp;nums,int start, int end)
+&#123;
+    while(start &lt; end)&#123;
+        swap(nums[start],nums[end]);
+        start++; 
+        end--;
+    &#125;
+	
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>nums.assign(newArr.begin(), newArr.end());</code>   赋值数组</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-08-29T16:48:29+08:00"
-              content="2021-08-29">
-          08-29
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="木~木 微信">
+        <span>微信</span>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/08/29/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" itemprop="url">
-            <span itemprop="name">Hexo + Github 第一次搭建博客踩坑及建议</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-
-    </div>
   </div>
-  
-  
-  
+</div>
 
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>木~木
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://wanglincs.github.io/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/" title="刷题笔记">http://wanglincs.github.io/2022/04/08/刷题笔记/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/c-%EF%BC%8C%E5%88%B7%E9%A2%98/" rel="tag"># c++，刷题</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/03/28/%E6%97%B6%E9%9A%94%E5%BE%88%E4%B9%85%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9B%B4%E6%96%B0/" rel="prev" title="时隔很久的第一次更新">
+                  <i class="fa fa-chevron-left"></i> 时隔很久的第一次更新
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline-comments"></div>
 </div>
   </main>
 
@@ -307,7 +426,7 @@
 
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"https://my-blog-cub79a35u-wanglincs.vercel.app/","placeholder":"请文明评论呀","avatar":"mm","pageSize":10,"visitor":true,"comment_count":true,"requiredFields":[],"meta":["nick","mail","link"],"libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","el":"#waline-comments","path":"/archives/2021/08/"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"https://my-blog-cub79a35u-wanglincs.vercel.app/","placeholder":"请文明评论呀","avatar":"mm","pageSize":10,"visitor":true,"comment_count":true,"requiredFields":[],"meta":["nick","mail","link"],"libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","el":"#waline-comments","path":"/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/"}</script>
 <script>
 document.addEventListener('page:loaded', () => {
   NexT.utils.loadComments(CONFIG.waline.el).then(() => 

@@ -19,6 +19,27 @@
 ]]></content>
   </entry>
   <entry>
+    <title>刷题笔记</title>
+    <url>/2022/04/08/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="C-刷题笔记Tips"><a href="#C-刷题笔记Tips" class="headerlink" title="C++刷题笔记Tips"></a>C++刷题笔记Tips</h2><p><code>reverse(result.begin(),result.end());</code> 反转数组</p>
+<p>自己写：</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void reverse(vector&lt;int&gt; &amp;nums,int start, int end)
+&#123;
+    while(start &lt; end)&#123;
+        swap(nums[start],nums[end]);
+        start++; 
+        end--;
+    &#125;
+	
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>nums.assign(newArr.begin(), newArr.end());</code>   赋值数组</p>
+]]></content>
+      <tags>
+        <tag>c++，刷题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo + Github 第一次搭建博客踩坑及建议</title>
     <url>/2021/08/29/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>想法的开始是起于疫情的那个暑假，其间断断续续，把拖延症发挥到极致。遇到奇奇怪怪的BUG就一段时间的不了了之。闲则思变，想起我那胎死腹中，未见人间的博客呀，最近又将它搞起来。</p>
